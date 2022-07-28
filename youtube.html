@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MeTube</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="channel-pictures/my-channel.jpg"
+        />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=li2WDMgHxD0"
+              target="_blank"
+              class="video-title-link"
+            >
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+            </a>
+            <div class="video-time">1:37</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a
+                  href="https://www.youtube.com/c/voughtintl"
+                  target="_blank"
+                  class="video-title-link"
+                >
+                  <img
+                    class="profile-picture"
+                    src="channel-pictures/channel-1.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img
+                    class="channel-tooltip-picture"
+                    src="channel-pictures/channel-1.jpg"
+                  />
+                  <div>
+                    <div class="channel-tooltip-name">Vought International</div>
+                    <div class="channel-tooltip-stats">292K Subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=li2WDMgHxD0"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-title">
+                  Soldier Boy | Guest Appearance on Solid Gold
+                </p>
+              </a>
+              <a
+                href="https://www.youtube.com/c/voughtintl"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-author">Vought International</p>
+              </a>
+              <p class="video-stats">6M views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=FPy4ABZ804c"
+              target="_blank"
+              class="video-title-link"
+            >
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+            </a>
+            <div class="video-time">10:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a
+                  href="https://www.youtube.com/c/DoctorMike"
+                  target="_blank"
+                  class="video-title-link"
+                >
+                  <img
+                    class="profile-picture"
+                    src="channel-pictures/channel-2.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img
+                    class="channel-tooltip-picture"
+                    src="channel-pictures/channel-2.jpg"
+                  />
+                  <div>
+                    <div class="channel-tooltip-name">Doctor Mike</div>
+                    <div class="channel-tooltip-stats">9.92M Subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=FPy4ABZ804c"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-title">Absurd 5-Minute Crafts “Health Hacks</p>
+              </a>
+              <a
+                href="https://www.youtube.com/c/DoctorMike"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-author">Doctor Mike</p>
+              </a>
+              <p class="video-stats">7.4M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=2qQHtyZDyss"
+              target="_blank"
+              class="video-title-link"
+            >
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+            </a>
+            <div class="video-time">10:06</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a
+                  href="https://www.youtube.com/c/ambiguousamphibian"
+                  target="_blank"
+                  class="video-title-link"
+                >
+                  <img
+                    class="profile-picture"
+                    src="channel-pictures/channel-3.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img
+                    class="channel-tooltip-picture"
+                    src="channel-pictures/channel-3.jpg"
+                  />
+                  <div>
+                    <div class="channel-tooltip-name">ambigiousamphibian</div>
+                    <div class="channel-tooltip-stats">957K Subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=2qQHtyZDyss"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-title">Bustin'™ Out</p>
+              </a>
+              <a
+                href="https://www.youtube.com/c/ambiguousamphibian"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-author">ambigiousamphibian</p>
+              </a>
+              <p class="video-stats">637K views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=4gwYkEK0gOk"
+              target="_blank"
+              class="video-title-link"
+            >
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+            </a>
+            <div class="video-time">2:44</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a
+                  href="https://www.youtube.com/c/Fireship"
+                  target="_blank"
+                  class="video-title-link"
+                >
+                  <img
+                    class="profile-picture"
+                    src="channel-pictures/channel-4.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img
+                    class="channel-tooltip-picture"
+                    src="channel-pictures/channel-4.jpg"
+                  />
+                  <div>
+                    <div class="channel-tooltip-name">Fireship</div>
+                    <div class="channel-tooltip-stats">1.47M Subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=4gwYkEK0gOk"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-title">Assembly Language in 100 Seconds</p>
+              </a>
+              <a
+                href="https://www.youtube.com/c/Fireship"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-author">Fireship</p>
+              </a>
+              <p class="video-stats">516K views &#183; 3 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=l-hh51ncgDI"
+              target="_blank"
+              class="video-title-link"
+            >
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
+            </a>
+            <div class="video-time">11:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a
+                  href="https://www.youtube.com/c/SebastianLague"
+                  target="_blank"
+                  class="video-title-link"
+                >
+                  <img
+                    class="profile-picture"
+                    src="channel-pictures/channel-5.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img
+                    class="channel-tooltip-picture"
+                    src="channel-pictures/channel-5.jpg"
+                  />
+                  <div>
+                    <div class="channel-tooltip-name">Sebastian Lague</div>
+                    <div class="channel-tooltip-stats">983K Subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=l-hh51ncgDI"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-title">
+                  Algorithms Explained – minimax and alpha-beta pruning
+                </p>
+              </a>
+              <a
+                href="https://www.youtube.com/c/SebastianLague"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-author">Sebastian Lague</p>
+              </a>
+              <p class="video-stats">691K views &#183; 4 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=zmb2FJGvnAw"
+              target="_blank"
+              class="video-title-link"
+            >
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+            </a>
+            <div class="video-time">15:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a
+                  href="https://www.youtube.com/c/bethesda"
+                  target="_blank"
+                  class="video-title-link"
+                >
+                  <img
+                    class="profile-picture"
+                    src="channel-pictures/channel-6.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img
+                    class="channel-tooltip-picture"
+                    src="channel-pictures/channel-6.jpg"
+                  />
+                  <div>
+                    <div class="channel-tooltip-name">Bethesda Softworks</div>
+                    <div class="channel-tooltip-stats">1.81M Subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=zmb2FJGvnAw"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-title">Starfield: Official Gameplay Reveal</p>
+              </a>
+              <a
+                href="https://www.youtube.com/c/bethesda"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-author">Bethesda Softworks</p>
+              </a>
+              <p class="video-stats">2.9M views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=WSKAIKqXYqE"
+              target="_blank"
+              class="video-title-link"
+            >
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp" />
+            </a>
+            <div class="video-time">1:19:36</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a
+                  href="https://www.youtube.com/c/Sidemen"
+                  target="_blank"
+                  class="video-title-link"
+                >
+                  <img
+                    class="profile-picture"
+                    src="channel-pictures/channel-7.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img
+                    class="channel-tooltip-picture"
+                    src="channel-pictures/channel-7.jpg"
+                  />
+                  <div>
+                    <div class="channel-tooltip-name">Sidemen</div>
+                    <div class="channel-tooltip-stats">15.9M Subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=WSKAIKqXYqE"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-title">
+                  SIDEMEN BUYING ONE COLOUR FOR 24 HOURS
+                </p>
+              </a>
+              <a
+                href="https://www.youtube.com/c/Sidemen"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-author">Sidemen</p>
+              </a>
+              <p class="video-stats">19M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=qi2rByJed-E"
+              target="_blank"
+              class="video-title-link"
+            >
+              <img class="thumbnail" src="thumbnails/thumbnail-8.webp" />
+            </a>
+            <div class="video-time">2:38</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a
+                  href="https://www.youtube.com/c/CrunchyrollCollection"
+                  target="_blank"
+                  class="video-title-link"
+                >
+                  <img
+                    class="profile-picture"
+                    src="channel-pictures/channel-8.jpg"
+                  />
+                </a>
+                <div class="channel-tooltip">
+                  <img
+                    class="channel-tooltip-picture"
+                    src="channel-pictures/channel-8.jpg"
+                  />
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Crunchyroll Collection
+                    </div>
+                    <div class="channel-tooltip-stats">4.45M Subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=qi2rByJed-E"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-title">The Final Battle | Naruto Shippuden</p>
+              </a>
+              <a
+                href="https://www.youtube.com/c/CrunchyrollCollection"
+                target="_blank"
+                class="video-title-link"
+              >
+                <p class="video-author">Crunchyroll Collection</p>
+              </a>
+              <p class="video-stats">1.5M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
